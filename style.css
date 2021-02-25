@@ -1,93 +1,74 @@
-.box1 {
-    position: -webkit-sticky !important;
-    position: sticky !important;
-  }
-  
-  /* 菜單 */
-  #products {
-    width: 1280px;
-    margin: 0 auto;
-  }
-  
-  #products {
-    display: grid;
-    grid-template-columns: 60% 40%;
-  }
-  
-  #products .pic img {
-    width: 100%;
-    height: 350px;
-    object-fit: cover;
-  }
-  
-  #products .text{
-    padding: 150px 20px 0 0;
-  }
-  
-  #products .text h1 {
-    padding: 30px 0;
-  }
-  
-  #products .text p {
-    width: 300px;
-    line-height: 2;
-    padding-bottom: 10px;
-  }
-  /* 元素內要選取變動的地方:nth-child(第幾項) */
-  /* 若想選擇多項可依照奇數偶數輸入 奇數:odd 偶數:even */
-  #products > div:nth-child(2) {
-    grid-template-areas: "pic text";
-    grid-template-columns: 60% 90%;
-  }
-  /* grid-area可將區塊分為小區塊命名，最後在於區塊如上方 grid-template-areas: "pic text" 輸入順序 */
-  #products > div:nth-child(2) .text{
-    grid-area: text;
-  }
-  #products > div:nth-child(2) .pic{
-    grid-area: pic;
-  }
 
-  .carousel-inner img {
-    width: 1280px; 
-    
-    object-fit: cover;
+  .navbar {
+    display: grid !important;
+    grid-template-columns: 30% 70%  !important;
 
   }
-  
+  #socail img {
+    width: 20px;
+    margin: auto 5px;;
+  }
   /* 按鈕樣式 */
   .button {
     padding: 8px 30px;
     border: 1px solid #000000;
     color: #000000;
     transition: 0.5s;
+    margin-left: 200px;
+    
+
   
   }
   .button:hover {
-    background: #000000;
+    background: #118a51;
     color: #fff
   }
 /* news */
   #news {
     text-align: center;
+    margin: 100px auto;
   }
 
   #news  h1 {
     font-size:20px;
-    margin-top: 30px;
+    margin: 20px auto;
     text-shadow: rgba(0,0,0,0.5);
     color:gray;
     
   }
+ 
+
+
 
   #news p {
     font-size: 20px;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 50px;
   }
 
+
  /* story */
-#story {
-  
+ #story > div {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-top: 20px;
+   }
+ #story-hr {
+  border:#000000 1px solid;
+ }
+ .text p {
+   margin: 30px;
+ }
+
+.text h1 {
+  text-align: center;
+  margin: 0 auto 50px ;
 }
+
+.pic img {
+  width: 500px;
+  height: 400px;
   
-  
+  object-fit: cover;
+ 
+}
