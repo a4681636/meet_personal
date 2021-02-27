@@ -1,15 +1,26 @@
 
+  @import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
   /* .navbar { */
     /* display: grid !important; */
     /* grid-template-columns: 30% 70%  !important; */
   
+  .navbar {
+    opacity:0.5;
+    
+
+  }
+  
+  #navbarNavDropdown  {
+    padding-left: 700px;
+  }
   /* 按鈕樣式 */
   .button {
     padding: 8px 30px;
     border: 1px solid #000000;
     color: #000000;
     transition: 0.5s;
-    margin-left: 400px;
+    margin-left: 250px;
+    margin-top: 50px;
     
 
   
@@ -18,11 +29,16 @@
     background: #118a51;
     color: #fff
   }
+  /* 輪播圖 */
+  #carouselExampleIndicators {
+    width: 100%;
+    
+  }
 /* news */
   #news {
     
     text-align: center;
-    margin: 100px auto;
+    margin: 0px auto;
   }
 
   #news  h1 {
@@ -46,21 +62,30 @@
 
 
  /* story */
+ #story {
+  
+   display: grid;
+   grid-template-columns: 10% 70% 20%;
+ }
  #story > div {
   display: grid;
   grid-template-columns: 50% 50%;
-  margin-top: 20px;
+  
+
    }
  #story-hr {
   border:#000000 1px solid;
  }
  .text p {
-   margin: 30px;
+   margin: 30px 50px 20px;
  }
 
 .text h1 {
   text-align: center;
   margin: 0 auto 50px ;
+}
+.pic {
+ margin-left: 300px;
 }
 
 .pic img {
@@ -88,7 +113,7 @@
 #socail  img {
   width: 40px;
   text-align: right;
-  margin:120px 1px 5px; 
+  margin:250px 1px 5px; 
   
 }
 .logo img {
@@ -96,9 +121,20 @@
 }
 .small h1 {
   color:#fff;
-  font-size: 50px;
+  font-size: 100px;
+  font-family: 'Sacramento', cursive;
 }
+.small .smallone{
+  font-size: 15px;
+  margin: 20px 10px 5px 100px;
+  padding-top: 30px;
+}
+
+
+
 #copy {
   margin: 10px 10px 10px 20px;
   text-align: right;
 }
+/*  */
+
