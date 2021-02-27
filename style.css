@@ -1,20 +1,15 @@
 
-  .navbar {
-    display: grid !important;
-    grid-template-columns: 30% 70%  !important;
-
-  }
-  #socail img {
-    width: 20px;
-    margin: auto 5px;;
-  }
+  /* .navbar { */
+    /* display: grid !important; */
+    /* grid-template-columns: 30% 70%  !important; */
+  
   /* 按鈕樣式 */
   .button {
     padding: 8px 30px;
     border: 1px solid #000000;
     color: #000000;
     transition: 0.5s;
-    margin-left: 200px;
+    margin-left: 400px;
     
 
   
@@ -25,15 +20,18 @@
   }
 /* news */
   #news {
+    
     text-align: center;
     margin: 100px auto;
   }
 
   #news  h1 {
+    
     font-size:20px;
     margin: 20px auto;
-    text-shadow: rgba(0,0,0,0.5);
+    text-align: center;
     color:gray;
+
     
   }
  
@@ -71,4 +69,36 @@
   
   object-fit: cover;
  
+}
+/* footer */
+.small {
+  text-align-last: left;
+  padding: 10px 30px;
+  display: grid;
+  grid-template-columns: 80% 20%;
+  
+  
+}
+
+
+#copy {
+  font-size: 8px;
+  color:white;
+}
+#socail  img {
+  width: 40px;
+  text-align: right;
+  margin:120px 1px 5px; 
+  
+}
+.logo img {
+  width: 100px;
+}
+.small h1 {
+  color:#fff;
+  font-size: 50px;
+}
+#copy {
+  margin: 10px 10px 10px 20px;
+  text-align: right;
 }
