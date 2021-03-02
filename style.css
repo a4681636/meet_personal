@@ -5,23 +5,33 @@
     /* grid-template-columns: 30% 70%  !important; */
   
   #navbar {
-    background-color: rgba(255, 255, 255, 0) !important; 
+    background-color: rgba(0, 0, 0, 0.5) !important; 
+    display: grid;
+    grid-template-columns: 30% 70%;
     position: fixed;
-    top:30px;
+    top:0;
+
     
 
   }
   #meet {
-    margin-right:200px !important;
-    color:white;
+    margin-left:250px !important;
+    font-family: 'Sacramento', cursive;
+
+    color:rgb(233, 223, 92);
     font-size: 50px;
+    margin-top: 10px;
   }
   #navitem{
-    color:white;
+    color:rgb(235, 221, 101);
     font-weight: 1000;
+    padding: 0 20px;
+    line-height: 1.5;
+    -webkit-line-clamp: 1;
   }
   #navbarNavDropdown  {
     padding-left: 700px;
+    
   }
   /* 按鈕樣式 */
   .button {
